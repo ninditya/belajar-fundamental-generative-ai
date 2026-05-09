@@ -376,56 +376,6 @@ pyngrok>=7.0.0
 
 ---
 
-## Kriteria Penilaian
-
-### Kriteria 1: Text-to-Image
-
-| Level | Status | Detail |
-|-------|--------|--------|
-| ✅ Basic (2 pts) | **Terpenuhi** | `generate_simple_image()` + `generate_advanced_image()` dengan seed=222 |
-| ✅ Skilled (3 pts) | **Terpenuhi** | Eksperimen guidance scale [2.0, 7.5, 15.0] + inference steps [5, 15, 50] + observasi tertulis |
-| ✅ Advanced (4 pts) | **Terpenuhi** | Batch inference 2×2 + `load_scheduler()` (Euler A, DPM++, DDIM) + observasi scheduler |
-
-### Kriteria 2: Inpainting & Image Manipulation
-
-| Level | Status | Detail |
-|-------|--------|--------|
-| ✅ Basic (2 pts) | **Terpenuhi** | `inpaint_engine()` + manual masking hardcode + model `stable-diffusion-inpainting` + seed=9 |
-| ✅ Skilled (3 pts) | **Terpenuhi** | CLIPSeg automasking + `prepare_outpainting()` + outpainting 1 arah |
-| ✅ Advanced (4 pts) | **Terpenuhi** | Zoom Out multi-step + Two-Stage Generation (Base + Refiner, denoising_end/start=0.8) |
-
-### Kriteria 3: Streamlit Interface
-
-| Level | Status | Detail |
-|-------|--------|--------|
-| ✅ Basic (2 pts) | **Terpenuhi** | Prompt/neg_prompt text input + slider CFG/steps + tombol Generate + gambar ditampilkan |
-| ✅ Skilled (3 pts) | **Terpenuhi** | `num_images` input + Grid 2×2 + Dropdown scheduler + tombol Flush RAM |
-| ✅ Advanced (4 pts) | **Terpenuhi** | Tab EDIT untuk inpainting/outpainting + `streamlit_drawable_canvas` untuk mask drawing |
-
-### Estimasi Nilai Akhir
-
-```
-Nilai Akhir = (Kriteria 1 + Kriteria 2 + Kriteria 3) / 3
-            = (4 + 4 + 4) / 3
-            = 4.0  →  ⭐⭐⭐⭐⭐ Bintang 5 (Advanced)
-```
-
----
-
-## 📁 File Submission
-
-```
-BFGAI_Nama-siswa.zip
-├── Pipeline_submission_BFGAI_Nama-siswa.ipynb   ✅
-├── Streamlit_submission_BFGAI_Nama-siswa.ipynb  ✅
-├── video_demo_aplikasi_BFGAI.mp4                ⚠️ (screen record perlu dilakukan)
-└── requirements.txt                             ✅
-```
-
-> ⚠️ **Catatan:** Pastikan video demo Streamlit (`.mp4`, 1–5 menit) sudah direkam dan disertakan sebelum submit.
-
----
-
 ## 🛡️ Model & Library yang Digunakan
 
 | Library | Versi | Fungsi |
