@@ -1,0 +1,20 @@
+# Exclude large binary files
+*.zip
+*.mp4
+*.mov
+*.avi
+
+# Exclude images
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
